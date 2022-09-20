@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        textarea{
+            background: black;
+            color: white;
+        }
+        td{
+            background: orange;
+            color: blue;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="check">
+        <h3>로그인 화면</h3>
+        <table border="1">
+            <tr align="center">
+                <td>로그인 id</td>
+                <td><input type="text" name="id"><br></td>
+            </tr>
+            <tr align="center">
+                <td>로그인 pw</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="서버로 전송"></td>
+            </tr>
+        </table>
+        <hr color="blue" size="5">
+        <h3>회원가입 화면</h3>
+        <table border="1">
+            <tr>
+                <td align="center">가입할 id</td>
+                <td><input type="text" name="id"></td>
+            </tr>
+            <tr>
+                <td align="center">가입할 pw</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td align="center">가입할 이름</td>
+                <td><input type="text" name="name" placeholder="이름/성 순서대로 입력하세요"></td>
+            </tr>
+            <tr>
+                <td align="center">성별</td>
+                <td><input type="radio" name="G" value="man">남
+                    <input type="radio" name="G" value="woman">여
+                </td>
+            </tr>
+            <tr>
+                <td align="center">생년월일</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td align="center">취미</td>
+                <td><input type="checkbox" name="H1" value="run">달리기
+                    <input type="checkbox" name="H2" value="watch">동영상 시청
+                    <input type="checkbox" name="H3" value="surfing">인터넷 서핑
+                </td>
+            </tr>
+            <tr>
+                <td align="center">전화번호 통신사</td>
+                <td><select name="phone">
+                        <option value="SKT">SKT</option>
+                        <option value="KT">KT</option>
+                        <option value="LG">LG</option>
+                        <option value="알뜰폰">알뜰폰</option>
+                    </select>
+                    <input type="number" name="number" placeholder="01X-XXXX-XXXX 형태로 입력">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">하고 싶은 말</td>
+                <td><textarea cols="30" rows="10" placeholder="100자 이내로 입력해주세요"></textarea><br></td>
+
+            </tr>
+            <tr align="center">
+                <td colspan="2"><button>제출하기</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

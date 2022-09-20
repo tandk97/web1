@@ -1,0 +1,17 @@
+body{
+    background: yellow;
+    color: green;
+}
+h3{
+    color: blue;
+}
+button{
+    background: lime;
+    color: darkblue;
+    font-size: 15px;
+    font-weight: bold;
+}
+input{
+    background: gainsboro;
+
+}
