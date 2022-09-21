@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        #total {
+            width: 800px;
+            height: 800px;
+            background: lightcyan
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+            /*안쪽여백*/
+        }
+
+        #center {
+            width: 800px;
+            height: 500px;
+            padding: 30px;
+        }
+
+        #top2 {
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        li:nth-child(2n) {
+            background: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="product.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="bbs.html">게시판</a>
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="cop.html">기타</a>
+                    <!--추가된 사이트-->
+                </li>
+            </ul>
+        </div>
+        <div id="top2">장바구니</div>
+        <div id="center">회원가입 페이지
+            <form>
+                <h3>검색할 단어를 입력하세요</h3>
+                <hr>
+                검색할 단어 <input type="text" name="find" id="gogo">
+                <button>검색시작</button>
+                <hr>
+                <h3>로그인 화면</h3>
+                아이디 <input type="text" name="id" class="login"><br>
+                비밀번호 <input type="password" name="id" class="login"><br>
+                <button>로그인</button>
+                <hr>
+                <h3>회원가입 화면</h3>
+                가입할 id <input type="text" name="id" class="log"><br>
+                가입할 pw <input type="password" name="pw" class="log"><br>
+                가입할 이름 <input type="text" name="name" placeholder="이름/성 순서대로 입력하세요"><br>
+                성별 : <input type="radio" name="G1" value="man">남
+                <input type="radio" name="G2" value="woman">여<br>
+                생년월일 : <input type="date" id="day"><br>
+                취미 : <input type="checkbox" name="H1" value="run">달리기
+                <input type="checkbox" name="H2" value="watch">동영상 시청
+                <input type="checkbox" name="H3" value="surfing">인터넷 서핑<br>
+                전화번호 통신사
+                <select name="phone">
+                    <option value="SKT">SKT</option>
+                    <option value="KT">KT</option>
+                    <option value="LG">LG</option>
+                    <option value="알뜰폰">알뜰폰</option>
+                </select>
+                <input type="number" name="number" placeholder="01X-XXXX-XXXX 형태로 입력"><br>
+                하고 싶은 말<br>
+                <textarea cols="30" rows="10" placeholder="100자 이내로 입력해주세요"></textarea><br>
+                <button>제출하기</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

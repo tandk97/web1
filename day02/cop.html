@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        #total {
+            width: 800px;
+            height: 800px;
+            background: lightcyan
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+            /*안쪽여백*/
+        }
+
+        #center {
+            width: 800px;
+            height: 500px;
+            padding: 30px;
+        }
+
+        #top2 {
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        li:nth-child(2n) {
+            background: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="product.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="bbs.html">게시판</a>
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+                </li>
+                <li>
+                    <a href="cop.html">기타</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">장바구니</div>
+        <div id="center">협력업체<br>
+            <hr color="black" size="4">
+            협력회사 주소<br>
+            <div class="btn-group">
+                <a
+                    href="https://www.apple.com/kr/?afid=p238%7CsiADh6hbK-dc_mtid_18707vxu38484_pcrid_620523511820_pgrid_16348496961_pntwk_g_pchan__pexid__&cid=aos-kr-kwgo-Brand--slid---product-">
+                    <button type="button" class="btn btn-info">Apple</button></a>
+                <a href="https://www.samsung.com/sec/">
+                    <button type="button" class="btn btn-info">Samsung</button></a>
+                <a href="https://www.sony.co.kr/">
+                    <button type="button" class="btn btn-info">Sony</button></a>
+            </div>
+            <br>
+            <hr color="blue">
+            설문조사<br>
+            원하시는 제품군은?
+            <form>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">노트북
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">태블릿
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">핸드폰
+                    </label>
+                </div>
+                <div class="container">
+            </form>
+            <h2>회사 구성</h2>
+            <p>회사 이메일 및 구성원</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>직책</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>김씨</td>
+                        <td>사장</td>
+                        <td>KIM@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>박씨</td>
+                        <td>부장</td>
+                        <td>Park@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>최씨</td>
+                        <td>대리</td>
+                        <td>choi@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        메인화면 가기<a href="day02site.html"><button>메인화면</button></a>
+    </div>
+    </div>
+</body>
+
+</html>
