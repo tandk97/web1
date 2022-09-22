@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #center {
+            background: yellow;
+            width: 400px;
+            height: 50px;
+            padding: 30px;
+        }
+    </style>
+    <script>
+        // 아이디 5글자 유효 확인
+        function idcheck(){
+        id=document.getElementById("id").value
+        if(id.length >= 5){
+            resultid='5글자 이상입니다. 유효합니다'
+            resultid1='<img src="ok.png" width="250 height=250">'
+        } else{
+            resultid='5글자 미만입니다. 재입력 해주세요'
+            resultid1='<img src="no.png" width="250 height=250">'
+        }
+        center.innerHTML = '<font color=red>' + resultid + '</font'
+        center1.innerHTML = resultid1
+
+    }
+        //패스워드 일치 확인
+        function check(){
+            pw = document.getElementById('pw').value
+            pwcheck = document.getElementById('pwcheck').value
+            if(pw == pwcheck){
+                result='일치'
+                result1='<img src="ok.png" width="250 height=250">'
+            } else{
+                result='불일치'
+                result1='<img src="no.png" width="250 height=250">'
+            }
+            center.innerHTML = '<font color=red>' + result + '</font'
+            center1.innerHTML = result1
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>자바 스크립트 테스트</h1>
+        <hr>
+        <div id="d1">
+            아이디 : <input type="text" id="id">
+            <button onclick="idcheck()" style="background: pink; color: blue;">글자수 체크</button><br>
+            패스워드 : <input type="text" id="pw"><br>
+            패스워드2 : <input type="text" id="pwcheck">
+            <button onclick="check()" style="background: lime; color: white;">패스워드 동일</button><br>
+            <hr>
+            <div id="center"></div>
+            <div id="center1"></div>
+        </div>
+    </div>
+
+</body>
+</html>
